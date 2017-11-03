@@ -1,0 +1,113 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/test" />
+
+    <!-- 这里是分割线 -->
+
+    <TableRow android:gravity="center" >
+
+        <TextView
+            android:text="freevpnss"
+            android:textColor="#ff0000"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/america_ss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#503175AF"
+            android:onClick="Click"
+            android:text="美国" />
+
+        <Button
+            android:id="@+id/japan_ss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D7ECCE"
+            android:onClick="Click"
+            android:text="日本" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+
+    <!-- 这里是分割线 -->
+
+    <Button
+        android:id="@+id/service_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_copy"
+        android:text="服务器地址：无数据"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+
+    <Button
+        android:id="@+id/port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_copy"
+        android:text="端口：无数据"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+
+    <Button
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_copy"
+        android:text="密码：无数据" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+
+    <Button
+        android:id="@+id/encryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#902F71AA"
+        android:text="加密方式：无数据" />
+       
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+    
+    <Button
+        android:id="@+id/lostupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9000ff2a"
+        android:text="最后更新时间：无数据" />
+       
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#333" />
+
+</TableLayout>
